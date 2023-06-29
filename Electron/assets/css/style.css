@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'SansationRegular', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #171717;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    max-width: 2560px;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: none;     /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 1px solid rgba(0, 0, 0, 0.5);  /* отступ вокруг бегунка */
+}
+
+.logo a{
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color: #FF307A;
+    font-size: 40px;
+    user-select: none;
+}
+
+.logo-icon {
+    color: #7230FF;
+}
+
+.header-left-content__wrapper {
+    display: flex;
+}
+
+.search {
+    position: relative;
+}
+
+#header-search {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 270px;
+    height: 38px;
+    margin-left: 85px;
+    outline: none;
+    padding-left: 45px;
+    color: white;
+    overflow: hidden;
+    transition: .3s ease-in-out padding-left;
+}
+
+#header-search::placeholder {
+    font-family: "SansationBold"; 
+}
+
+.search-icon {
+    position: absolute;
+    left: 86px;
+    top: 0;
+    transition: .3s ease-in-out left;
+}
+
+.search-icon i {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: .3s ease-in-out border;
+}
+
+.search-icon-left {
+    position: absolute;
+    left: 88%;
+    top: 0;
+}
+
+.header-menu {
+    display: flex;
+    column-gap: 50px;
+    color: white;
+    font-size:  28px;
+}
+
+.header-menu a {
+    transition: .3s ease-in-out color;
+}
+
+.header-menu a:hover {
+    color: gray;
+}
+
+main {
+    padding: 20px 70px;
+}
+
+.item {
+    border: 1px solid #FF307A;
+    border-image: linear-gradient(35deg, rgba(114,48,255,1) 0%, rgba(255,48,122,1) 100%);
+    border-image-slice: 1;
+    padding: 20px 90px;
+    display: flex;
+    gap: 50px;;
+    max-width: 1250px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.item h3 {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-family: 'SansationLight';
+    top: -45px;
+    left: 0;
+}
+
+.item__element {
+    width: 195px;
+    height: 195px;
+    border-radius: 20px;
+    background: #373737;
+}
+
+footer {
+    border-top: 1px solid #CC00FF;
+    padding: 44px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 60px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-content a {
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: "SansationRegular"; 
+    src: url("/assets/fonts/Sansation-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "SansationBold"; 
+    src: url("/assets/fonts/Sansation-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "SansationLight"; 
+    src: url("/assets/fonts/Sansation-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
