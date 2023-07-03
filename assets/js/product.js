@@ -50,9 +50,9 @@ publishButton.addEventListener('click', function() {
     
     createPName.textContent = nameInputValue;
 
-    if (window.innerWidth < 476) {
-        createPName.textContent = 'Имя Фамилия'
-    }
+    if (createPName.textContent === '') {
+        createPName.textContent = 'Имя Фамилия';
+    };
 
     createPText.textContent = textInputValue;
     createRating.textContent = `Оценка: ${ratingInputValue}/10`;
