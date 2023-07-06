@@ -164,6 +164,18 @@ button:hover {
     left: 88%;
 }
 
+.comment-publish-success {
+    position: fixed;
+    display: flex;
+    column-gap: 15px;
+    background-color: #373737;
+    color: greenyellow;
+    padding: 20px;
+    right: -180px;
+    top: 705px;
+    transition: .3s linear all;
+}
+
 /* delete arrows from input [type="number"] */
 
 input::-webkit-outer-spin-button,
