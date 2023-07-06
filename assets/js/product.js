@@ -27,6 +27,8 @@ const publishButton = document.querySelector('#leave-a-comment__button');
 
 const usersComments = document.querySelector('.users-comments');
 
+const commentPublishSuccess = document.querySelector('.comment-publish-success');
+
 publishButton.addEventListener('click', function() {
 
     const nameInputValue = nameInput.value;
@@ -65,4 +67,10 @@ publishButton.addEventListener('click', function() {
 
     nameInput.value = '';
     textInput.value = '';
+
+    commentPublishSuccess.style.right = 0;
+    
+    setTimeout(() => {
+        commentPublishSuccess.style.right = '-180px';
+    }, 5000);
 });
