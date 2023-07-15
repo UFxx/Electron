@@ -43,6 +43,7 @@
            </div>
        </div>
        <div class="header-menu">
+            <a href=""><i class="fas fa-sign-out-alt"></i></a>
            <a href=""><i class="fas fa-user-plus"></i></a>
            <a href=""><i class="fas fa-user"></i></a>
            <a href=""><i class="fas fa-shopping-cart"></i></a>
@@ -54,6 +55,18 @@
         <div class="product">
             <div class="product-img">
                 <img src="assets/img/products/product-img-headphones.webp" alt="product__photo">
+                <div class="slider-line">
+                    <i class="fas fa-chevron-left"></i>
+                    <!-- Картинок можно запихнуть 2 - 5,
+                    ибо тогда отображаться будет не очень -->
+                    <div class="slider__item active-slide"><img src="assets/img/products/headphones/product-img-headphones-black.webp" alt=""></div>
+                    <div class="slider__item"><img src="assets/img/products/headphones/product-img-headphones-white .webp" alt=""></div>
+                    <div class="slider__item"><img src="assets/img/products/headphones/product-img-headphones-pink.webp" alt=""></div>
+                    <div class="slider__item"><img src="assets/img/products/headphones/product-img-headphones-pink.webp" alt=""></div>
+                    <div class="slider__item"><img src="assets/img/products/headphones/product-img-headphones-pink.webp" alt=""></div>
+                    <div class="slider__item"><img src="assets/img/products/headphones/product-img-headphones-pink.webp" alt=""></div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
             <div class="product-description">
                 <p class="product-title">Yowu RGB Cat Ear Headphone 3G Wireless 5.0 Foldable Gaming Headset with 7.1 Surround Sound, Built-in Mic & Customizable Lighting and Effect via APP</p>
@@ -63,9 +76,14 @@
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                     mollit anim id est laborum.</p>
-                    <div class="line"></div>
+                    <div class="price">
+                        <p class="start-price">Начальная цена: <span id="start-price-number">7000</span></p>
+                        <p class="discount">Скидка: <span id="discount-number">5</span></p>
+                        <p class="finish-price">Конечная цена: <span id="finish-price-number"></span></p>
+                        <p class="manufacturer">Производитель: Mainland China</p>
+                    </div>
                     <div class="add-to-cart__button">
-                        <a href="#"><button>Добавить в корзину</button></a>
+                        <button type="button">Добавить в корзину</button>
                     </div>
             </div>
         </div>
@@ -81,7 +99,7 @@
                    </div>
                     <div class="users-comments__item">
                         <p class="user-name">Игорь Ермолаев</p>
-                        <p class="user-rating">8.7</p>
+                        <p class="user-rating"></p>
                         <p class="comment-date"></p>
                         <p class="comment-text">Вкусно</p>
                     </div>
@@ -89,20 +107,15 @@
             <div class="leave-a-comment">
                 <form action="" class="leave-a-comment__form">
                     <div class="name-rating-wrapper">
-                        <input type="text" name="" id="form-name" placeholder="Введите имя и фамилию">
-                        <input type="number" name="" id="form-rating" placeholder="Введите вашу оценку (1-10)">
+                        <input type="text" name="" class="field" id="form-name" placeholder="Введите имя и фамилию" oninput="this.value=this.value.replace(/[^a-zA-Z А-ЯЁа-яё]/g,'');">
+                        <input type="number" name="" class="field" id="form-rating" placeholder="Введите вашу оценку (1-10)" data-min="1" data-max="50">
                     </div>
                     <textarea name="" id="form-text" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                    <button id="leave-a-comment__button" type="button">Опубликовать</button>
+                    <button id="leave-a-comment__button" type="submit">Опубликовать</button>
                 </form>
             </div>
         </div>
     </main>
-
-    <div class="comment-publish-success">
-        <i class="fas fa-check"></i>
-        <p>Опубликован</p>
-    </div>
 
     <footer class="footer">
         <div class="footer-content">
@@ -115,6 +128,8 @@
     <p class="created">Designed and created by Brahma & Alexandr Khubaev</p>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/product.js"></script>
+    <script src="assets/js/product-js/product-slider.js"></script>
+    <script src="assets/js/product-js/product.js"></script>
+    <script src="assets/js/product-js/commentsButton.js"></script>
 </body>
 </html>
