@@ -28,6 +28,4 @@ addToCartButton.addEventListener('click', function() {
         this.style.backgroundColor = 'transparent';
     }, 1000)
 });
-// Discount calc
-finishPrice.textContent = startPrice.textContent - startPrice.textContent * (discount.textContent / 100);
 
