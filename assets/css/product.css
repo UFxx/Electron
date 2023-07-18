@@ -51,15 +51,17 @@ button:hover {
 }
 
 .slider__item {
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 75px;
+    height: 65px;
     display: flex;
     justify-content: center;
 }
 
 .slider__item img {
-    height: 60px;
-    width: 75px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .slider-line i {
@@ -123,9 +125,6 @@ button:hover {
 
 #discount-number::after {
     content: '%';
-}
-
-#finish-price-number {
 }
 
 #finish-price-number::after {
