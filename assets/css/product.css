@@ -229,6 +229,10 @@ button:hover {
     border-bottom-right-radius: 50px;
 }
 
+#product {
+    opacity: 0;
+}
+
 #leave-a-comment__button {
     position: absolute;
     border: 2px solid #7230FF;

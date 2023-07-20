@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация. Шаг 2</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+	<!-- Sansation Font-->
+	<link href="https://allfont.net/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css" />
+	<link href="https://allfont.net/allfont.css?fonts=sansation-bold" rel="stylesheet" type="text/css" />
+	<link href="https://allfont.net/allfont.css?fonts=sansation-light" rel="stylesheet" type="text/css" />
+
+	<!-- M1 PLUS Code Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/header+footer.css">
+	<link rel="stylesheet" href="assets/css/media-query-header.css">
+	<link rel="stylesheet" href="assets/css/login.css">
+	<link rel="stylesheet" href="assets/css/registration-first-step.css">
+	<link rel="stylesheet" href="assets/css/media-query-register-first-step.css">
+	<link rel="stylesheet" href="assets/css/registration-second-step.css">
+	<link rel="stylesheet" href="assets/css/media-query-registration-second-step.css">
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="header-left-content__wrapper">
+			<div class="logo"><a href="index.html"><span id="logo" class="">Electron</span> <span class="logo-icon"><i class="fas fa-bolt"></i></span></a></div>
+			<div class="search">
+				<form class="search" action="search">
+					<input type="search" name="header-search" class="header-search"
+						placeholder="Введите название товара">
+					<div class="search-icon">
+						<i class="fas fa-search"></i>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="header-menu">
+			<a href=""><i class="fas fa-sign-out-alt"></i></a>
+			<a href="/login.html"><i class="fas fa-user"></i></a>
+			<a href=""><i class="fas fa-shopping-cart"></i></a>
+			<a href=""><i class="fas fa-headphones-alt"></i></a>
+		</div>
+	</header>
+
+	<div class="content">
+		<h3>Шаг 2 из 2</h3>
+		<form action="" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="RO5ZtF0u5jhLRvt0Gzu9vxYMTQkFszaQn7tNMzUqBEf6SkPCuvlkbYOkWoVbpUqg">
+			<table>
+
+				<input type="hidden" name="registration_wizard_form-current_step" value="1" id="id_registration_wizard_form-current_step">
+
+				<tr>
+					<th><label for="id_1-email">Адрес электронной почты:</label></th>
+					<td>
+						<input type="email" name="1-email" maxlength="254" id="id_1-email" placeholder="Введите E-mail">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_1-phone">Телефон:</label></th>
+					<td>
+						<input type="text" name="1-phone" maxlength="20" id="id_1-phone" placeholder="Введите номер телефона">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_1-address">Адрес:</label></th>
+					<td>
+						<input type="text" name="1-address" maxlength="150" id="id_1-address" placeholder="Введите ваш адрес">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_1-mailing_list">Рассылка:</label></th>
+					<td>
+						<label for="id_1-mailing_list"><button type="button" id="mailing-list-on__button" class="clicked">Выключена</button></label>
+						<input type="checkbox" name="1-mailing_list" id="id_1-mailing_list">
+					</td>
+				</tr>
+
+			</table>
+
+			<div class="buttons">
+				<a href="/registration-first-step.html"><button name="wizard_goto_step" type="submit" value="0" id="first-step__button">Шаг 1</button></a>
+				<a href="/registration-first-step.html"><button name="wizard_goto_step" type="submit" value="0" id="prev-step__button">Предыдущий шаг</button></a>
+				<button type="submit">Подтвердить</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="assets/js/registrationSecondStep.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

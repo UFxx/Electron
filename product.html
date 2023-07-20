@@ -44,8 +44,8 @@
        </div>
        <div class="header-menu">
             <a href=""><i class="fas fa-sign-out-alt"></i></a>
-           <a href=""><i class="fas fa-user-plus"></i></a>
-           <a href=""><i class="fas fa-user"></i></a>
+           <a href="/registration-first-step.html"><i class="fas fa-user-plus"></i></a>
+           <a href="/login.html"><i class="fas fa-user"></i></a>
            <a href=""><i class="fas fa-shopping-cart"></i></a>
            <a href=""><i class="fas fa-headphones-alt"></i></a>
        </div>
@@ -106,7 +106,8 @@
                 <form action="" class="leave-a-comment__form">
                     <div class="name-rating-wrapper">
                         <input type="text" name="" class="field" id="form-name" placeholder="Введите имя и фамилию" oninput="this.value=this.value.replace(/[^a-zA-Z А-ЯЁа-яё]/g,'');">
-                        <input type="number" name="" class="field" id="form-rating" placeholder="Введите вашу оценку (1-10)" data-min="1" data-max="50">
+                        <input type="number" name="" class="field" id="form-rating" placeholder="Введите вашу оценку (1-10)" >
+                        <input type="number" name="" class="field" id="product" disabled>
                     </div>
                     <textarea name="" id="form-text" cols="30" rows="10" placeholder="Введите текст"></textarea>
                     <button id="leave-a-comment__button" type="submit">Опубликовать</button>

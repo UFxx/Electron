@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация. Шаг 1</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+	<!-- Sansation Font-->
+	<link href="https://allfont.net/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css" />
+	<link href="https://allfont.net/allfont.css?fonts=sansation-bold" rel="stylesheet" type="text/css" />
+	<link href="https://allfont.net/allfont.css?fonts=sansation-light" rel="stylesheet" type="text/css" />
+
+	<!-- M1 PLUS Code Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/header+footer.css">
+	<link rel="stylesheet" href="assets/css/media-query-header.css">
+	<link rel="stylesheet" href="assets/css/login.css">
+	<link rel="stylesheet" href="assets/css/registration-first-step.css">
+	<link rel="stylesheet" href="assets/css/media-query-register-first-step.css">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="header-left-content__wrapper">
+			<div class="logo"><a href="index.html"><span id="logo" class="">Electron</span> <span class="logo-icon"><i class="fas fa-bolt"></i></span></a></div>
+			<div class="search">
+				<form class="search" action="search">
+					<input type="search" name="header-search" class="header-search" placeholder="Введите название товара">
+					<div class="search-icon">
+						<i class="fas fa-search"></i>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="header-menu">
+			<a href=""><i class="fas fa-sign-out-alt"></i></a>
+			<a href="/login.html"><i class="fas fa-user"></i></a>
+			<a href=""><i class="fas fa-shopping-cart"></i></a>
+			<a href=""><i class="fas fa-headphones-alt"></i></a>
+		</div>
+	</header>
+
+	<div class="content">
+		<h3>Шаг 1 из 2</h3>
+		<form action="" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="K437gg0DT4G5c3ePnGJFNg1Mdj8kyfSmgnrVzaUzppEqdSArbCAQtHRkgRJQvA8M">
+
+			<table>
+				<input type="hidden" name="registration_wizard_form-current_step" value="0" id="id_registration_wizard_form-current_step">
+
+				<tr>
+					<th><label for="id_0-first_name">Имя:</label></th>
+					<td>
+						<input type="text" name="0-first_name" maxlength="150" id="id_0-first_name" placeholder="Введите имя">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-last_name">Фамилия:</label></th>
+					<td>
+						<input type="text" name="0-last_name" maxlength="150" id="id_0-last_name" placeholder="Введите фамилию">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-username">Имя пользователя:</label></th>
+					<td>
+						<input type="text" name="0-username" value="alexkar" maxlength="150" autofocus required id="id_0-username" placeholder="Введите имя пользователя">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-password1">Пароль:</label></th>
+					<td>
+						<input type="password" name="0-password1" autocomplete="new-password" required id="id_0-password1" placeholder="Введите пароль">
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-password2" id="label-repeat-password">Подтверждение пароля:</label></th>
+					<td class="repeat-password">
+						<input type="password" name="0-password2" autocomplete="new-password" required id="id_0-password2" placeholder="Повторите пароль">
+						<span class="helptext">Для подтверждения введите, пожалуйста, пароль ещё раз.</span>
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-gender">Пол:</label></th>
+					<td>
+						<select name="0-gender" id="id_0-gender">
+							<option value="" selected>Выберите пол</option>
+							<option value="М">Мужской</option>
+							<option value="Ж">Женский</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th><label for="id_0-birthday">Дата рождения:</label></th>
+					<td>
+						<input type="text" name="0-birthday" value="" id="id_0-birthday" placeholder="Введите дату рождения">
+					</td>
+				</tr>
+
+			</table>
+
+			<a href="/registration-second-step.html"><button type="submit">Далее</button></a>
+		</form>
+	</div>
+
+	<script src="assets/js/registrationFirstStep.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- html в pycharm 
+
+{% load i18n %}
+{%load static%}
+
+{% block headblock %}
+
+{% endblock %}
+
+{% block content %}
+<p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+<form action="" method="post">{% csrf_token %}
+<table>
+{{ wizard.management_form }}
+{% if wizard.form.forms %}
+    {{ wizard.form.management_form }}
+    {% for form in wizard.form.forms %}
+        {{ form.as_table }}
+    {% endfor %}
+{% else %}
+    {{ wizard.form }}
+{% endif %}
+</table>
+{% if wizard.steps.prev %}
+<button name="wizard_goto_step" type="submit" value="{{ wizard.steps.first }}">{% translate "first step" %}</button>
+<button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">{% translate "prev step" %}</button>
+{% endif %}
+<input type="submit" value="{% translate 'submit' %}"/>
+</form>
+{% endblock %}  -->

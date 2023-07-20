@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Войти</title>
+    <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=O7t9G7xBTVnWSOkEYI62FRyOlQTBAP3Bd9NCHChSdv0yN3_MfK7pGkggackZ8EfT" charset="UTF-8"></script>
+</head>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+<!-- Sansation Font-->
+<link href="https://allfont.net/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css" />
+<link href="https://allfont.net/allfont.css?fonts=sansation-bold" rel="stylesheet" type="text/css" />
+<link href="https://allfont.net/allfont.css?fonts=sansation-light" rel="stylesheet" type="text/css" />
+
+<!-- M1 PLUS Code Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/header+footer.css">
+<link rel="stylesheet" href="assets/css/media-query-header.css">
+<link rel="stylesheet" href="assets/css/media-query-header.css">
+<link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header-left-content__wrapper">
+            <div class="logo"><a href="index.html"><span id="logo" class="">Electron</span> <span class="logo-icon"><i class="fas fa-bolt"></i></span></a></div>
+            <div class="search">
+                <form class="search" action="search">
+                    <input type="search" name="header-search" class="header-search" placeholder="Введите название товара">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-menu">
+            <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            <a href="/registration-first-step.html"><i class="fas fa-user-plus"></i></a>
+            <a href=""><i class="fas fa-shopping-cart"></i></a>
+            <a href=""><i class="fas fa-headphones-alt"></i></a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h3>Вход</h3>
+        <form method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="yvLgWImX1aNRd5Gh6HgRCOouqPHXLaBD4O94fCgTxvLceU2TUD72ife2tnitIvR3">
+
+            <p>
+                <label for="id_username">Логин:</label>
+                <input type="text" name="username" maxlength="150" required id="id_username" placeholder="Введите имя">
+            </p>
+
+            <p>
+                <label for="id_password">Пароль:</label>
+                <input type="password" name="password" required id="id_password" placeholder="Введите пароль">
+            </p>
+
+            <div class="form-input">
+                <!-- <input type="submit" value="Войти"> -->
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+        <a href="/registration-first-step.html">Регистрация</a>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- html файл в pycharm 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+<form  method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <div class="form-input">
+        <input type="submit" value="Войти">
+    </div>
+</form>
+<h3><a href="">регистрация</a></h3>
+</body>
+</html>
+
+html в браузере  -->
