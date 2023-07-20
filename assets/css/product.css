@@ -224,6 +224,30 @@ button:hover {
     position: relative;
 }
 
+#form-name + label, #form-rating + label {
+    position: absolute;
+    top: -38px;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    opacity: 0;
+    transition: .3s ease opacity;
+    text-align: center;
+    width: 250px;
+    border: 2px solid #3F3F3F;
+}
+
+#form-rating + label {
+    left: 271px;
+    border-top-left-radius: none;
+    border-top-right-radius: 30px;
+}
+
+#form-name + label {
+    border-top-left-radius: 30px;
+    border-top-right-radius: none;
+
+}
+
 #form-text {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;

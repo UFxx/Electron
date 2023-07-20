@@ -106,11 +106,13 @@
                 <form action="" class="leave-a-comment__form">
                     <div class="name-rating-wrapper">
                         <input type="text" name="" class="field" id="form-name" placeholder="Введите имя и фамилию" oninput="this.value=this.value.replace(/[^a-zA-Z А-ЯЁа-яё]/g,'');">
-                        <input type="number" name="" class="field" id="form-rating" placeholder="Введите вашу оценку (1-10)" >
+                        <label for="form-name">Введите имя</label>
+                        <input type="number" name="" class="field" id="form-rating" placeholder="Введите вашу оценку (1-10)">
+                        <label for="form-rating">Введите рейтинг</label>
                         <input type="number" name="" class="field" id="product" disabled>
                     </div>
                     <textarea name="" id="form-text" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                    <button id="leave-a-comment__button" type="submit">Опубликовать</button>
+                    <button id="leave-a-comment__button" type="button">Опубликовать</button>
                 </form>
             </div>
         </div>
