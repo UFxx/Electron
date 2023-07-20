@@ -17,6 +17,7 @@ body {
     color: white;
     margin-left: 50px;
     white-space: nowrap;
+    width: 86px;
 }
 
 .content form {
