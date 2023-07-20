@@ -16,6 +16,7 @@ body {
 .content h3 {
     color: white;
     margin-left: 50px;
+    white-space: nowrap;
 }
 
 .content form {
