@@ -116,7 +116,7 @@ button:hover {
 }
 
 #start-price-number::after {
-    content: '₽';
+    content: ' ₽';
 }
 
 #discount-number {
