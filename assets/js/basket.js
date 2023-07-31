@@ -7,7 +7,22 @@ for (i = 0; i < itemDescription.length; i++) {
         itemDescriptionArr.length = 100;
         itemDescription[i].textContent = itemDescriptionArr.join('') + '...';
     }
+    if (itemDescriptionArr.length > 100 || window.innerWidth < 1280) {
+        itemDescriptionArr.length = 50;
+        itemDescription[i].textContent = itemDescriptionArr.join('') + '...';
+    }
 }
+
+// Order button animation
+const orderButton = document.querySelector('#total__button');
+orderButton.addEventListener('click', () => {
+    orderButton.style.backgroundColor = 'green';
+    orderButton.textContent = 'Заказано!';
+    orderButton.setAttribute('disabled', '');
+    setTimeout(() => {
+        orderButton.style.backgroundColor = 'transparent';
+    }, 1000);
+});
 
 // Item counter const's
 const itemCountPlus = document.querySelectorAll('.fa-plus');
@@ -79,10 +94,21 @@ for (i = 0; i < 15; i++) {
         }
     })
 
+    // Order one item
+    const orderOneItem = document.querySelectorAll('.fa-cart-arrow-down');
+    const orderOneItemIndex = orderOneItem[i];
+    orderOneItemIndex.addEventListener('click', () => {
+        orderOneItemIndex.classList.remove('fa-cart-arrow-down')
+        orderOneItemIndex.classList.add('fa-check')
+        orderOneItemIndex.style.color = 'green';
+    });
+
     deleteIcon[i].addEventListener('click', () => {
         itemIndex.style.transform = `translateX(${-window.innerWidth}px)`;
         setTimeout(() => {
-            itemIndex.style.display = 'none';
-        }, 300)
-    })
-}
+            itemIndex.remove();
+            priceIndex.textContent = 0;
+        }, 300);
+        totalPrice.textContent -= priceIndex.textContent;
+    });
+};

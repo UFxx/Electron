@@ -1,6 +1,7 @@
 .main-content__wrapper {
-    padding: 30px 140px;
     display: flex;
+    justify-content: center;
+    padding: 30px 140px;
     flex-wrap: wrap;
     gap: 80px 200px;
 }
@@ -63,8 +64,12 @@
     transition: .3s ease color;
 }
 
-.item__counter-container i:hover {
-    color: rgb(135, 135, 135);
+.item__counter-container .fa-plus:hover {
+    color: green;
+}
+
+.item__counter-container .fa-minus:hover {
+    color: red;
 }
 
 .item__action-buttons-container i {
@@ -88,7 +93,7 @@
 }
 
 .price {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 18px;
 }
 
@@ -102,11 +107,12 @@
 }
 
 .buy-action-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: right;
     color: white;
     font-size: 20px;
-    position: absolute;
     right: 140px;
     bottom: 10px;
 }
@@ -128,7 +134,8 @@
     overflow: hidden;
     margin-left: 20px;
     transition: .3s ease box-shadow,
-    .3s ease transform;
+                        .3s ease transform,
+                        .3s ease background-color;
 }
 
 #total__button:hover {
