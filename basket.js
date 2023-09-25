@@ -62,11 +62,11 @@ for (i = 0; i < 15; i++) {
     let counter = counterObj.counter;
     // Plus counter
     itemCountPlus[i].addEventListener('click', () => {
-        ++counterObj.counter
-        itemCounterIndex.textContent = counterObj.counter;
+        ++counter
+        itemCounterIndex.textContent = counter;
 
         // Count item sum price  
-        priceIndex.textContent = startPrice * counterObj.counter;
+        priceIndex.textContent = startPrice * counter;
 
         // Change total price
         let standartSum = 0;
@@ -78,16 +78,16 @@ for (i = 0; i < 15; i++) {
 
     // Minus counter
     itemCountMinus[i].addEventListener('click', () => {
-        --counterObj.counter
-        itemCounterIndex.textContent = counterObj.counter;
+        --counter
+        itemCounterIndex.textContent = counter;
 
         // Count item sum price  
-        priceIndex.textContent = startPrice * counterObj.counter;
+        priceIndex.textContent = startPrice * counter;
 
         if (counter <= 0) {
-            counterObj.counter = 1;
+            counter = 1;
             itemCounterIndex.textContent = 1;
-            priceIndex.textContent = startPrice * counterObj.counter;
+            priceIndex.textContent = startPrice * counter;
         }
 
         // Change total price
