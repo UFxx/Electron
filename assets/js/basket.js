@@ -1,3 +1,7 @@
+let counterObj = {
+    counter: 1
+};
+
 // Crop items description text
 const itemDescription = document.querySelectorAll('.item__description');
 
@@ -55,7 +59,7 @@ for (i = 0; i < 15; i++) {
     const itemCounterIndex = itemCounter[i];
     const itemIndex = item[i];
 
-    let counter = 1;
+    let counter = counterObj.counter;
     // Plus counter
     itemCountPlus[i].addEventListener('click', () => {
         ++counter
