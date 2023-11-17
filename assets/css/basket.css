@@ -167,9 +167,10 @@
     bottom: -100%;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 
     padding: 30px 73px;
     width: 400px;
@@ -335,6 +336,12 @@
     background-size: contain;
 }
 
+.cash-active {
+    background: url(/assets/img/basket/payment-method/cash-active.png) no-repeat;
+    background-size: contain;
+}
+
+
 .cash:hover {
     background: url(/assets/img/basket/payment-method/cash-active.png) no-repeat;
     background-size: contain;
@@ -343,6 +350,11 @@
 .mastercard {
     margin-top: 10px;
     background: url(/assets/img/basket/payment-method/mastercard-unactive.png) no-repeat;
+    background-size: contain;
+}
+
+.mastercard-active {
+    background: url(/assets/img/basket/payment-method/mastercard-active.webp) no-repeat;
     background-size: contain;
 }
 
@@ -357,6 +369,12 @@
     background-size: contain;
 }
 
+.visa-active {
+    background: url(/assets/img/basket/payment-method/visa-active.png) no-repeat;
+    background-size: contain;
+}
+
+
 .visa:hover {
     background: url(/assets/img/basket/payment-method/visa-active.png) no-repeat;
     background-size: contain;
@@ -366,6 +384,12 @@
     background: url(/assets/img/basket/payment-method/qiwi-unactive.png) no-repeat;
     background-size: contain;
 }
+
+.qiwi-active {
+    background: url(/assets/img/basket/payment-method/qiwi-active.png) no-repeat;
+    background-size: contain;
+}
+
 
 .qiwi:hover {
     background: url(/assets/img/basket/payment-method/qiwi-active.png) no-repeat;
@@ -377,7 +401,96 @@
     background-size: contain;
 }
 
+.mts-active {
+    background: url(/assets/img/basket/payment-method/mts-active.png) no-repeat;
+    background-size: contain;
+}
+
+
 .mts:hover {
     background: url(/assets/img/basket/payment-method/mts-active.png) no-repeat;
     background-size: contain;
+}
+
+.order-is-accepted__popup {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 35%;
+    top: 20%;
+    background-color: black;
+    border-radius: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 32px;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: .3s ease z-index,
+                    .3s ease opacity,
+                    .3s ease height;
+}
+
+.check-circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: scale(0);
+    transition: .3s ease transform;
+}
+
+.check-circle div:first-child {
+    position: absolute;
+    width: 15px;
+    height: 0px;
+    background-color: green;
+    transform: rotate(-44.93deg);
+    border-radius: 5px;
+    left: 45px;
+    top: 60px;
+
+    transition: .3s ease height;
+}
+
+.check-circle div:last-child {
+    position: absolute;
+    width: 15px;
+    height: 0px;
+    transform: rotate(46deg);
+    background-color: green;
+    border-radius: 5px;
+    right: 53.4px;
+    
+    transition: .3s ease height;
+}
+
+.order-is-accepted__popup p {
+    margin-top: 15px;
+}
+
+.order-is-accepted__popup button {
+    border: 2px solid #CC00FF;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    padding: 3px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    transition: .3s ease background-color;
+}
+
+.order-is-accepted__popup button:hover {
+    background-color: #cc00ff79;
 }
