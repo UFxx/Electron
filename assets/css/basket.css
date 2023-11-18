@@ -455,9 +455,10 @@
     background-color: green;
     transform: rotate(-44.93deg);
     border-radius: 5px;
-    left: 45px;
-    top: 60px;
-
+    left: 25px;
+    top: 70px;
+    transform-origin: top;
+    
     transition: .3s ease height;
 }
 
@@ -465,12 +466,14 @@
     position: absolute;
     width: 15px;
     height: 0px;
-    transform: rotate(46deg);
+    transform: rotate(44deg);
     background-color: green;
     border-radius: 5px;
-    right: 53.4px;
+    top: 50px;
+    right: 27px;
+    transform-origin: top;
     
-    transition: .3s ease height;
+    transition: .6s ease height;
 }
 
 .order-is-accepted__popup p {
