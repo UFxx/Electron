@@ -2,7 +2,7 @@ const profileSettingsButton = document.querySelector('.fa-cogs');
 const profileSettingsContainer = document.querySelector('.profile-settings__container');
 const profileSettings = document.querySelector('.profile-settings');
 const closeButtons = document.querySelectorAll('#confirm, .fa-times');
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
 profileSettingsButton.addEventListener('click', () => {
     profileSettingsContainer.style.display = 'block';

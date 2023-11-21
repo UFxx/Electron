@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- Tektur Font Regular 400/Medium 500/Bold 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- M1 PLUS Code Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/order.css">
+    <link rel="stylesheet" href="assets/css/header+footer.css">
+    <link rel="stylesheet" href="assets/css/media-query-header.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header-left-content__wrapper">
+            <div class="logo"><a href="index.html"><span id="logo" class="">Electron</span> <span class="logo-icon"><i class="fas fa-bolt"></i></span></a></div>
+            <div class="search">
+                <form class="search" action="search">
+                    <input type="search" name="header-search" class="header-search" placeholder="Введите название товара">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-menu">
+            <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            <a href="/registration-first-step.html"><i class="fas fa-user-plus"></i></a>
+            <a href="/login.html"><i class="fas fa-user"></i></a>
+            <a href="/basket.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href=""><i class="fas fa-headphones-alt"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="order-info">
+            <h3>Информация о заказе</h3>
+            <div class="order-info__text">
+                <p class="order-id">ID заказа: <span>12</span></p>
+                <p class="order-date">Дата заказа: 01.02.2000</p>
+                <p class="order-status">Статус: <span>Доставлен</span></p>
+                <p class="order-adress">Адрес доставки: <span>ул. Какаято 81</span></p>
+                <p class="order-price">Стоимость заказа: <span>17489</span> ₽</p>
+            </div>
+        </div>
+        <div class="order-products-list">
+            <h3>Список товаров</h3>
+            <ul>
+                <li><a href="">15.6" Ноутбук Irbis NB260 черный</a>
+                <li><a href="">Наушники</a>
+            </ul>
+        </div>
+        <h3>Появились вопросы? Напишите в <span><a href="" id="support-link">поддержку</a></span>!</h3>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#">О нас</a>
+            <a href="#">Поставщики</a>
+            <a href="#">Связаться с нами</a>
+        </div>
+    </footer>
+
+    <p class="created">Designed and created by Brahma & Alexandr Khubaev</p>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
