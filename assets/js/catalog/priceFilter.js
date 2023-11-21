@@ -25,8 +25,8 @@ function setInputValues(input) {
             case minPriceText:
                 minPriceSlider.value = minPriceText.value;
                 break
-                case maxPriceSlider:
-                    maxPriceText.value = maxPriceSlider.value;
+            case maxPriceSlider:
+                maxPriceText.value = maxPriceSlider.value;
             default:
                 maxPriceSlider.value = maxPriceText.value;
                 break;
@@ -37,3 +37,13 @@ setInputValues(minPriceSlider);
 setInputValues(minPriceText);
 setInputValues(maxPriceSlider);
 setInputValues(maxPriceText);
+
+// FOR MOZILA
+const browserName = window.navigator.userAgent.split(' ')[window.navigator.userAgent.split(' ').length - 1].split('/')[0];
+if (browserName == 'Firefox') {
+    minPriceSlider.value = 0;
+    minPriceText.value = 0;
+
+    maxPriceSlider.value = Math.max(...maxPrices);
+    maxPriceText.value = Math.max(...maxPrices);
+}
