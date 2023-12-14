@@ -10,6 +10,9 @@ orderAllButton.addEventListener('click', () => {
     setTimeout(() => {
         confirmOrder.style.bottom = '0';
     }, 300)
+
+    window.scrollTo({top: 0, behavior: "smooth"});
+    body.style.overflow = 'hidden';
 });
 
 const changePaymentMethod = document.querySelector('#change-payment-method');
@@ -48,6 +51,7 @@ confirmOrderBackground.addEventListener('click', () => {
         confirmOrderBackground.style.zIndex = -1;
         confirmOrderBackground.style.opacity = 0;
         confirmOrder.style.display = 'none';
+        body.style.overflow = 'scroll';
     }, 300)
 })
 
@@ -82,6 +86,8 @@ confirmButton.addEventListener('click', () => {
             checkLastDiv.style.height = '80px';
         }, 900)
     }, 600)
+
+    body.style.overflow = 'scroll';
 })
 
 const closePopup = document.querySelector('#close-popup');

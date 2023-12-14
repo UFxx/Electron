@@ -43,6 +43,11 @@
     .buy-action-wrapper {
         right: 20px;
     }
+
+    .confirm-order {
+        padding: 20px 60px;
+    }
+
 }
 
 @media (max-width: 1010px) {
@@ -53,7 +58,7 @@
 
 @media (max-width: 900px) {
     .main-content__wrapper {
-        padding-top: 100px;
+        padding-top: 120px;
         justify-content: center;
     }
 
@@ -72,9 +77,52 @@
     #total__button {
         font-size: 12px;
     }
+
+    .item__buttons-container {
+        font-size: 14px;
+    }
+
+    .confirm-order h3 {
+        font-size: 20px;
+    }
+
+    .order-item-title {
+        font-size: 18px;
+    }
+
+    .order-item-price {
+        font-size: 16px;
+    }
+
+    #confirm {
+        font-size: 14px;
+    }
+
+    #delivery + label {
+        font-size: 14px;
+    }
+
+    .payment-method-item {
+        width: 35px;
+        height: 35px;
+    }
+
+    .confirm-order {
+        padding: 10px 40px;
+        height: 530px;
+    }
+
+    .price {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 470px) {
+    
+    .order-is-accepted__popup {
+        width: auto;
+    }
+
     .item {
         width: 300px;
         padding-right: 0;
@@ -95,6 +143,37 @@
         width: 100px;
         font-size: 14px;
     }
+
+    .confirm-order {
+        width: 350px;
+    }
+
+    .confirm-order-item {
+        column-gap: 5px;
+        margin-top: 5px;
+    }
+
+    .order-item-img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 426px) {
+    .confirm-order {
+        width: 300px;
+    }
+
+    .order-item-text {
+        width: 230px;
+    }
+
+    #change-payment-method {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 376px) {
+    
 }
 
 @media (max-width: 321px) {
@@ -104,5 +183,97 @@
     
     .item__action-buttons-container {
         font-size: 14px;
+    }
+
+    .buy-action-wrapper {
+        margin-top: 20px;
+    }
+
+    .total {
+        font-size: 14px;
+        margin-left: 40px;
+    }
+
+    #total__button {
+        font-size: 12px;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .item__buttons-container {
+        position: absolute;
+        top: 70%;
+        left: 40px;
+        width: 70%;
+    }
+
+    .order-item-text {
+        width: 140px;
+    }
+
+    .confirm-order {
+        width: 200px;
+    }
+
+    .order-item-title {
+        font-size: 16px;
+    }
+
+    .order-item-description {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .order-item-price {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .confirm-order-item {
+        column-gap: 0;
+        margin-top: 20px;
+    }
+
+    #change-payment-method {
+        font-size: 12px;
+        padding: 5px;
+        white-space: wrap;
+        height: 60px;
+    }
+
+    #confirm {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+
+    #delivery + label::before {
+        margin-left: -25px;
+    }
+
+    #delivery + label {
+        margin-left: 40px;
+    }
+
+    .payment-method-item {
+        width: 25px;
+        height: 25px;
+    }
+
+    .payment-method-choice {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .payment-method-choice div a {
+        display: flex;
+    }
+
+    .visa {
+        order: 5;
     }
 }
