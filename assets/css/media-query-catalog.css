@@ -1,1 +1,42 @@
-    
+@media (max-width: 900px) {
+
+    .filters-icon__container {
+        top: 120px;
+        right: 50px;
+    }
+
+    .filters-container {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 769px) {
+    .filters-icon__container {
+        top: 120px;
+        right: 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .filters-container {
+        font-size: 16px;
+        padding: 15px;
+        width: 250px;
+    }
+
+    main {
+        padding: 40px 40px 40px 40px;
+    }
+}
+
+@media (max-width: 340px) {
+    .filters-icon__container i {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .filters-icon__container {
+        right: 10px;
+    }
+}

@@ -1,7 +1,7 @@
 main {
     position: relative;
     padding: 40px 100px;
-    overflow: hidden;
+    overflow-x: hidden;
     height: calc(100vh - 100px);
 }
 
@@ -56,7 +56,7 @@ main {
 }
 
 .filters-container {
-    position: absolute;
+    position: fixed;
     width: 305px;
     background-color: #171717;
     right: -307px;

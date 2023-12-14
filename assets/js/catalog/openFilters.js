@@ -4,7 +4,9 @@ const filtersContainer = document.querySelector('.filters-container');
 const main = document.querySelector('main');
 openFilterIcon.addEventListener('click', () => {
     filtersContainer.style.right = '0';
-    main.style.padding = '40px 307px 40px 100px';
+    if (window.innerWidth > 767) {
+        main.style.padding = '40px 307px 40px 100px';
+    }
 });
 
 // Close filters
