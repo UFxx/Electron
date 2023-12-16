@@ -1,0 +1,21 @@
+@media (max-width: 769px) {
+    .order-info {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 426px) {
+    .order-info {
+        font-size: 18px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 321px) {
+    .order-products-list {
+        font-size: 16px;
+    }
+}

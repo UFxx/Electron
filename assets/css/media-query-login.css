@@ -1,0 +1,11 @@
+@media (max-width: 901px) {
+    .content form + h3 {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 426px) {
+    .content form p {
+        font-size: 24px;
+    }    
+}
