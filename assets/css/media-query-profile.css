@@ -1,6 +1,99 @@
-@media (max-width: 900px) {
+@media (max-width: 901px) {
     .fa-cogs {
-        margin-top: 100px;
+        margin-top: 130px;
         margin-left: 90%;
+    }
+
+    .profile-settings {
+        padding: 0;
+    }
+}
+
+@media (max-width: 745px) {
+    .profile-settings form {
+        flex-direction: column;
+        margin: 30px 0;
+        margin-top: 60px;
+    }
+
+    .profile-settings {
+        width: auto;
+        height: auto;
+    }
+
+    .profile-settings form > div {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 565px) {
+    .profile-settings form input::placeholder {
+        font-size: 16px;
+    }
+
+    .profile-settings__title {
+        font-size: 24px;
+    }
+
+    .profile-settings form > div button, #confirm {
+        padding: 10px;
+        width: auto;
+        margin-left: -50px;
+    }
+
+    .profile-settings form {
+        width: 400px;
+    }
+
+    .profile-settings form > div {
+        margin-left: -20px;
+    }
+
+    #confirm {
+        margin-left: -90px;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .profile-settings {
+        border-radius: 10px;
+    }
+
+    .profile-settings .fa-times {
+        top: 20px;
+        left: 90%;
+        font-size: 22px;
+    }
+
+    .profile-settings form input::placeholder {
+        font-size: 14px;
+    }
+
+    .profile-settings form input {
+        font-size: 14px;
+    }
+
+    .profile-settings form > div button, #confirm {
+        padding: 10px;
+        width: auto;
+        margin-left: -50px;
+        font-size: 14px;
+    }
+
+    #confirm {
+        margin-left: -140px;
+    }
+
+    .profile-settings div:nth-child(3) {
+        margin-top: 5px;
+    }
+
+    .profile-settings form {
+        width: 300px;
+    }
+
+    .profile-settings form > div {
+        margin-left: -70px;
     }
 }
